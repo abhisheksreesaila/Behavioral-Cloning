@@ -19,9 +19,9 @@ Using the Udacity provided simulator and my drive.py file, the car can be driven
 The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works
 
 # Model Architecture and Training Strategy
-I started with the basic NN similar to the lessons and got the basic setup working. Then moved to LENET before moving to NVIDIA model shown below.
+I started with the basic NN similar to the lessons and got the basic setup working. Then moved to LENET before moving to NVIDIA model shown below.  
 
-
+![model.png](https://github.com/abhisheksreesaila/CarND-Behavioral-Cloning-P3/raw/master/model.png)
 
 The first layer of the network performs image normalization followed by cropping layer which takes out the sky and car section in every image. The convolutional layers are designed to perform feature extraction. I use strided convolutions in the first three convolutional layers with a 2×2 stride and a 5×5 kernel, and a (1,1) strided convolution with a 3×3 kernel size in the final two convolutional layers followed by three fully connected layers, leading to a final output control value. 
 
